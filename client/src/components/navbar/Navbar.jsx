@@ -85,14 +85,21 @@ function Navbar() {
                 <img src={onetouch} width="100" height="50" alt="" />
               </Link>
             </div>
-            <img
-              src={ganeshJi}
-              style={{ marginLeft: 30 }}
-              width="65"
-              height="50"
-              alt="Ganesh Ji"
-            />
-            <img src={ganeshJiManter} width="100" height="60" alt="Ganesh Ji" />
+            <div className="flex items-center mr-2">
+              <img
+                src={ganeshJi}
+                style={{ marginLeft: 30 }}
+                width="65"
+                height="50"
+                alt="Ganesh Ji"
+              />
+              <img
+                src={ganeshJiManter}
+                width="100"
+                height="60"
+                alt="Ganesh Ji"
+              />
+            </div>
             <div className="hidden md:block">
               <div className="ml-10 flex space-x-4">
                 <Link

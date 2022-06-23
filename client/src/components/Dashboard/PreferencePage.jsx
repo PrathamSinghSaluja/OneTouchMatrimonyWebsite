@@ -148,7 +148,7 @@ function PreferencePage() {
                       <div className=" bg-main-red text-white  rounded-lg shadow-md  md:mx-auto">
                         <img
                           loading="lazy"
-                          className="object-cover"
+                          className="  object-cover"
                           style={{ height: "220px", minWidth: "100%" }}
                           src={profile.image}
                           alt="image"
@@ -158,7 +158,7 @@ function PreferencePage() {
                         <div className="space-y-1 pt-3">
                           <div className="text-left pl-4">
                             <h1 className="font-semibold text-lg">
-                              {profile.fullname} 
+                              {profile.fullname}
                             </h1>
                             <p>
                               {profile.dob

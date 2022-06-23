@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import { useState } from "react";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { useNavigate } from "react-router-dom";
 import Btn from "../../subcomponents/buttons/Btn";
@@ -47,15 +47,24 @@ function IdSearch() {
       </div>
       <div>
         <div className=" items-center justify-center flex my-8">
-         <div className = "center" style= {{"padding-top" : "34px","padding-right" : "5px","margin-right":"-60px","z-index":"2"}}>OTM-</div>
+          <div
+            className="center"
+            style={{
+              "padding-top": "34px",
+              "padding-right": "5px",
+              "margin-right": "-60px",
+              "z-index": "2",
+            }}
+          >
+            OTM-
+          </div>
           <Input
             label="Search By ID"
             name="idsearch"
             type="text"
-            style = {{"padding-left":"55px"}}
+            style={{ "padding-left": "55px" }}
             value={id}
             onChange={(e) => setId(e.target.value)}
-           
             placeholder="DH3232H"
             className="w-80 text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 bg-gray-100 border rounded border-gray-200"
           />
@@ -91,13 +100,13 @@ function IdSearch() {
                   <p>{profile.country ? profile.country : ""}</p>
                 </div>
                 <div className="flex justify-center mt-2  space-x-2 pb-5">
-                  <Btn
+                  {/* <Btn
                     onClick={() => addToShortList(profile)}
                     className="px-2"
                     text="Save"
-                  />
+                  /> */}
                   <Btn
-                    text="View"
+                    text="View Profile"
                     onClick={() => {
                       showProfileHandler(profile);
                     }}
