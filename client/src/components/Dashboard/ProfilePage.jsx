@@ -418,10 +418,10 @@ function ProfilePage() {
               <Btn
                 disabled
                 text="Contact"
-                // onClick={() => {
-                //   window.open(`tel:${phone}`);
+                onClick={() => {
                   
-                // }}
+                  
+                }}
               />
 
               <Btn text={isSave ? "Unsave" : "Save"} onClick={addToShortList} />
