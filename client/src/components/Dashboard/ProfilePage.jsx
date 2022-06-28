@@ -416,10 +416,12 @@ function ProfilePage() {
             </div>
             <div className=" my-4 flex justify-evenly w-full ">
               <Btn
+                disabled
                 text="Contact"
-                onClick={() => {
-                  window.open(`tel:${phone}`);
-                }}
+                // onClick={() => {
+                //   window.open(`tel:${phone}`);
+                  
+                // }}
               />
 
               <Btn text={isSave ? "Unsave" : "Save"} onClick={addToShortList} />
